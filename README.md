@@ -24,9 +24,9 @@ Evaluate the trained model on test images and verify the classification accuracy
 
 ## PROGRAM
 
-### Name:
+### Name: R Raihaan Ahmed
 
-### Register Number:
+### Register Number: 212224040260
 
 ```python
 import torch
@@ -102,8 +102,8 @@ if torch.cuda.is_available():
     model.to(device)
 
 # Print model summary
-print('Name:Swetha S V')
-print('Register Number:212224230285')
+print('Name:R Raihaan Ahmed')
+print('Register Number:212224040260')
 summary(model, input_size=(1, 28, 28))
 
 # Initialize model, loss function, and optimizer
@@ -130,8 +130,8 @@ def train_model(model, train_loader, num_epochs=3):
 
             running_loss += loss.item()
 
-        print('Name: Swetha S V')
-        print('Register Number: 212224230285')
+        print('Name: R Raihaan Ahmed')
+        print('Register Number: 212224040260')
         print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {running_loss/len(train_loader):.4f}')
 
 # Train the model
@@ -155,8 +155,8 @@ def test_model(model, test_loader):
             all_labels.extend(labels.cpu().numpy())
 
     accuracy = correct / total
-    print('Name:Swetha S V')
-    print('Register Number:212224230285')
+    print('Name:r Raihaan Ahmed')
+    print('Register Number:212224040260')
     print(f'Test Accuracy: {accuracy:.4f}')
 
     # Compute confusion matrix
@@ -171,8 +171,8 @@ def test_model(model, test_loader):
     plt.show()
 
     # Print classification report
-    print('Name:Swetha S V')
-    print('Register Number:212224230285')
+    print('Name: R Raihaan Ahmed')
+    print('Register Number:212224040260')
     print("Classification Report:")
     print(classification_report(all_labels, all_preds, target_names=test_dataset.classes))
 
@@ -190,8 +190,8 @@ def predict_image(model, image_index, dataset):
     class_names = dataset.classes
 
     # Display the image
-    print('Name:Swetha S V')
-    print('Register Number:212224230285')
+    print('Name:R Raihaan Ahmed')
+    print('Register Number:212224040260')
     plt.imshow(image.squeeze(), cmap="gray")
     plt.title(f'Actual: {class_names[label]}\nPredicted: {class_names[predicted.item()]}')
     plt.axis("off")
@@ -207,20 +207,20 @@ predict_image(model, image_index= 95, dataset=test_dataset)
 
 ## Training Loss per Epoch
 
-<img width="312" height="187" alt="image" src="https://github.com/user-attachments/assets/c0dc0a55-7ac3-41ee-941a-9b3d616db24e" />
+<img width="223" height="115" alt="image" src="https://github.com/user-attachments/assets/2ce19247-4443-4823-9274-8d6834609e40" />
 
 
 ## Confusion Matrix
 
-<img width="821" height="795" alt="image" src="https://github.com/user-attachments/assets/36fefbc2-c37f-471d-8473-946fb33064bc" />
+<img width="645" height="546" alt="image" src="https://github.com/user-attachments/assets/1b6769ed-8128-4e4a-bbd5-c9f51ba082d6" />
 
 
 ## Classification Report
-<img width="512" height="417" alt="image" src="https://github.com/user-attachments/assets/8c135d24-0327-4c57-808c-863688754b1b" />
+<img width="404" height="285" alt="image" src="https://github.com/user-attachments/assets/5ec64ea0-7838-4f65-8aae-eaa78d012191" />
 
 
 ### New Sample Data Prediction
-<img width="516" height="562" alt="image" src="https://github.com/user-attachments/assets/19bcc819-16dc-4458-a986-5c677908181e" />
+<img width="357" height="409" alt="image" src="https://github.com/user-attachments/assets/41df908f-06d2-46ba-8cac-4bf73a1657d2" />
 
 
 ## RESULT
